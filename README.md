@@ -15,10 +15,11 @@ This is totally based on the [James Devine's Blog](https://pingu98.wordpress.com
 Get the FTDI driver from [FTDI chip website](https://ftdichip.com/drivers/d2xx-drivers/), or just follow the next command line block:
 
 ```bash
+mkdir ftdi
+cd ftdi
 wget https://www.ftdichip.com/Drivers/D2XX/Linux/libftd2xx-x86_64-1.4.8.gz
 tar xfvz libftd2xx-x86_64-1.4.8.gz
-cd release
-cd build
+cd release/build/
 sudo -s 
 cp libftd2xx.* /usr/local/lib
 chmod 0755 /usr/local/lib/libftd2xx.so.1.4.8
