@@ -97,7 +97,8 @@ cd icesugar-nano/src/basic/blink
 make build
 make prog_flash
 ```
-Hopefully, the orange LED in the iCESugar-nano should blink.
+Hopefully, the orange LED in the iCESugar-nano should blink.  
+The `prog_flash` option copies the `.bin` file to the `iCELink` folder in the the USB-based mass storage device created once the iCESugar-nano is pluged in the computer.
 
 
 ## RISC-V toolchain
