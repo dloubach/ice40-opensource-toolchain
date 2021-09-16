@@ -84,11 +84,20 @@ sudo make install
 ```
 
 ## Verify whether the IceStorm toolchain works
-To double check everything is fine so far, let's test the setup for the kit iCESugar-nano (featuring the  iCE40LP1K-CM36 chip).
+To double check everything is fine so far, let's test the setup.  
+Here, I used the hardware kit **iCESugar-nano** v1.2 (featuring the *iCE40LP1K-CM36* chip).
 
-Connect the hardware board to the USB and try the `blink demo` from [wuxx](https://github.com/wuxx/icesugar-nano).
+Connect the hardware board to the computer's USB and try the `blink demo` from [wuxx](https://github.com/wuxx/icesugar-nano).
 
 The folder is the `https://github.com/wuxx/icesugar-nano/tree/main/src/basic/blink`.
+
+```bash
+git clone https://github.com/wuxx/icesugar-nano
+cd icesugar-nano/src/basic/blink
+make build
+make prog_flash
+```
+Hopefully, the orange LED in the iCESugar-nano should blink.
 
 
 ## RISC-V toolchain
