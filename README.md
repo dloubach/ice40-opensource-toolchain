@@ -1,4 +1,4 @@
-# iCE40 opensource toolchain
+# iCE40 Open Source Toolchain
 This is a compilation of various sources to create a "how to" build a toolchain environment based on open source using **Linux/Ubuntu 20.04 LTS** distro.
 
 This step-by-step guideline aims to build an open source toolchain for iCE40 series FPGA including:
@@ -8,7 +8,7 @@ This step-by-step guideline aims to build an open source toolchain for iCE40 ser
 - Yosys
 - RISC-V toolchain 
 
-This is totally based on the [James Devine's Blog](https://pingu98.wordpress.com/2019/04/08/how-to-build-your-own-cpu-from-scratch-inside-an-fpga/) and on [Project IceStorm Clifford](http://www.clifford.at/icestorm/).
+This is fully based on [Clifford's Project IceStorm](http://www.clifford.at/icestorm/), and inspired on [James Devine's Blog](https://pingu98.wordpress.com/2019/04/08/how-to-build-your-own-cpu-from-scratch-inside-an-fpga/).
 
 
 ## FTDI drivers
