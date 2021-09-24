@@ -3,9 +3,10 @@ This is a compilation of various sources to create a "how to" build a toolchain 
 
 This step-by-step guideline aims to build an open source toolchain for iCE40 series FPGA including:
 - IceStorm Tools
-- Arachne-PNR
-- NextPNR
-- Yosys
+   - Arachne-PNR
+   - NextPNR
+   - Yosys
+- icesprog
 - RISC-V toolchain 
 
 This is fully based on [Clifford's Project IceStorm](http://www.clifford.at/icestorm/), and inspired on [James Devine's Blog](https://pingu98.wordpress.com/2019/04/08/how-to-build-your-own-cpu-from-scratch-inside-an-fpga/).
@@ -99,6 +100,30 @@ make prog_flash
 ```
 Hopefully, the orange LED in the iCESugar-nano should blink.  
 The `prog_flash` option copies the `.bin` file to the `iCELink` folder in the the USB-based mass storage device created once the iCESugar-nano is pluged in the computer.
+
+
+# icesprog
+This program is used to flash or do more configs (see the help `icesprog -h`).  
+Make sure your iCESugar-nano is connected to the USB.  
+Do the following:
+
+```bash
+sudo apt install libhidapi-dev
+sudo apt install libusb-1.0-0-dev
+git clone https://github.com/wuxx/icesugar.git icesugar
+cd icesugar/tools/src/
+make
+sudo cp icesprog /usr/local/bin/.
+icesprog -p 
+```
+
+with the last command, you should see:
+```bash
+probe chip
+board: [iCESugar-Nano]
+flash: [w25q16] (2MB)
+done
+```
 
 
 ## RISC-V toolchain
