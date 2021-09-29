@@ -156,6 +156,7 @@ make -j$(nproc)
 Follow the next command line to have your *Femto SoC RV32* synthesis, PnR, and bitstream `femtosoc.bin` for **iCESugar-nano v1.2**. This step is originally from [Bruno Levy](https://github.com/BrunoLevy/learn-fpga), but we use the modifications as in [here](https://github.com/dloubach/femtorv32.git).
 
 ```bash
+sudo apt install python3-serial
 git clone https://github.com/dloubach/femtorv32.git femtorv32
 cd femtorv32/FemtoRV/
 make icesugar_nano
