@@ -73,6 +73,8 @@ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 make -j$(nproc)
 sudo make install
 ```
+The GUI is not built by default in nextpnr. Add `-DBUILD_GUI=ON` to the `cmake` command line, and make sure `qt5-default` is installed.
+
 
 ### Yosys
 Install [Yosys](http://bygone.clairexen.net/yosys/) (Verilog synthesis):
