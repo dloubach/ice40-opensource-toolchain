@@ -160,3 +160,11 @@ sudo apt install python3-serial
 git clone https://github.com/dloubach/femtorv32.git femtorv32
 cd femtorv32/FemtoRV/
 make icesugar_nano
+```
+iCESugar-nano hw board | nextpnr running
+---------------------- | ---------------
+Featuring FPGA iCE40LP1K-CM36 | Logic Cells (LUT + FF) utilization: 1,248/1,280 (97%)
+![icesugar-nano-hw](https://github.com/dloubach/ice40-opensource-toolchain/blob/master/icesugar-nano.jpeg) | ![nextpnr](https://github.com/dloubach/ice40-opensource-toolchain/blob/master/ice40lp1k-cm36.gif)
+
+
+
