@@ -109,7 +109,7 @@ cd icesugar-nano/src/basic/blink
 git checkout c45b20b
 make build
 make prog_flash
-cd ..
+cd ../../../..
 ```
 Hopefully, the orange LED in the iCESugar-nano should blink.  
 The `prog_flash` option copies the `.bin` file to the `iCELink` folder in the the USB-based mass storage device created once the iCESugar-nano is pluged in the computer.
