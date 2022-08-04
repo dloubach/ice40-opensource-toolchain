@@ -181,4 +181,5 @@ Featuring FPGA iCE40LP1K-CM36 | Logic Cells (LUT + FF) utilization: 1,248/1,280 
 ![icesugar-nano-hw](https://github.com/dloubach/ice40-opensource-toolchain/blob/master/icesugar-nano.jpeg) | ![nextpnr](https://github.com/dloubach/ice40-opensource-toolchain/blob/master/ice40lp1k-cm36.gif)
 
 
-
+## iCESugar-nano Block Diagram
+![Block Diagram](https://github.com/dloubach/ice40-opensource-toolchain/blob/master/icesugar-nano-block-diagram.jpg)
