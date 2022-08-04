@@ -49,6 +49,7 @@ Install the [IceStorm Tools](https://github.com/YosysHQ/icestorm) (icepack, iceb
 ```bash
 git clone https://github.com/YosysHQ/icestorm.git icestorm
 cd icestorm
+git checkout 83b8ef9
 make -j$(nproc)
 sudo make install
 ```
@@ -59,6 +60,7 @@ Install [Arachne-PNR](https://github.com/cseed/arachne-pnr) (place & route tool,
 ```bash
 git clone https://github.com/cseed/arachne-pnr.git arachne-pnr
 cd arachne-pnr
+git checkout c40fb22
 make -j$(nproc)
 sudo make install
 ```
@@ -69,6 +71,7 @@ Install [NextPNR](https://github.com/YosysHQ/nextpnr) (place & route tool, Arach
 ```bash
 git clone https://github.com/YosysHQ/nextpnr nextpnr
 cd nextpnr
+git checkout bd137a8b
 cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 make -j$(nproc)
 sudo make install
@@ -82,6 +85,7 @@ Install [Yosys](http://bygone.clairexen.net/yosys/) (Verilog synthesis):
 ```bash
 git clone https://github.com/YosysHQ/yosys.git yosys
 cd yosys
+git checkout 62739f7b
 make -j$(nproc)
 sudo make install
 ```
@@ -97,6 +101,7 @@ The folder is the `https://github.com/wuxx/icesugar-nano/tree/main/src/basic/bli
 ```bash
 git clone https://github.com/wuxx/icesugar-nano
 cd icesugar-nano/src/basic/blink
+git checkout c45b20b
 make build
 make prog_flash
 ```
@@ -114,6 +119,7 @@ sudo apt install libhidapi-dev
 sudo apt install libusb-1.0-0-dev
 git clone https://github.com/wuxx/icesugar.git icesugar
 cd icesugar/tools/src/
+git checkout c45b20b
 make
 sudo cp icesprog /usr/local/bin/.
 icesprog -p 
