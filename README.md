@@ -26,6 +26,7 @@ cp libftd2xx.* /usr/local/lib
 chmod 0755 /usr/local/lib/libftd2xx.so.1.4.8
 ln -sf /usr/local/lib/libftd2xx.so.1.4.8 /usr/local/lib/libftd2xx.so
 exit
+cd ../../..
 ```
 
 
@@ -52,6 +53,7 @@ cd icestorm
 git checkout 83b8ef9
 make -j$(nproc)
 sudo make install
+cd ..
 ```
 
 ### Arachne-PNR
@@ -63,6 +65,7 @@ cd arachne-pnr
 git checkout c40fb22
 make -j$(nproc)
 sudo make install
+cd ..
 ```
 
 ### NextPNR
@@ -75,6 +78,7 @@ git checkout bd137a8b
 cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 make -j$(nproc)
 sudo make install
+cd ..
 ```
 The GUI is not built by default in nextpnr. Add `-DBUILD_GUI=ON` to the `cmake` command line, and make sure `qt5-default` is installed.
 
@@ -88,6 +92,7 @@ cd yosys
 git checkout 62739f7b
 make -j$(nproc)
 sudo make install
+cd ..
 ```
 
 ## Verify whether the IceStorm toolchain works
@@ -104,6 +109,7 @@ cd icesugar-nano/src/basic/blink
 git checkout c45b20b
 make build
 make prog_flash
+cd ..
 ```
 Hopefully, the orange LED in the iCESugar-nano should blink.  
 The `prog_flash` option copies the `.bin` file to the `iCELink` folder in the the USB-based mass storage device created once the iCESugar-nano is pluged in the computer.
@@ -123,6 +129,7 @@ git checkout c45b20b
 make
 sudo cp icesprog /usr/local/bin/.
 icesprog -p 
+cd ../../..
 ```
 
 with the last command, you should see:
@@ -156,6 +163,7 @@ mkdir build
 cd build
 ../configure --with-arch=rv32i --prefix=/opt/riscv32i
 make -j$(nproc)
+cd ../..
 ```
 
 ## Femto SoC RV32 (*work in progress*)
