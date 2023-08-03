@@ -38,6 +38,10 @@ sudo apt install build-essential clang bison flex libreadline-dev \
                  xdot pkg-config python python3 libftdi-dev \
                  qt5-default python3-dev libboost-all-dev cmake libeigen3-dev
 ```
+If you are running **Ubuntu 22.04**, maybe you have to install *g++-12*:
+```bash
+sudo apt install g++-12
+```
 
 
 ## IceStorm toolchain
